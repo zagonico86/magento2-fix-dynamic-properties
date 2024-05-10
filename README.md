@@ -33,6 +33,8 @@ protected $orderRepositoryInterface
 
 Maybe in your project there are some classes with this problem and if you need to upgrade from a Magento version requiring php<=8.1 to a Magento version requiring php>=8.2 you'll have to deal with it.
 
+More information here [https://www.zagonico.com/magento-2-4-6-dynamic-properties-are-deprecated/](https://www.zagonico.com/magento-2-4-6-dynamic-properties-are-deprecated/).
+
 ### Usage
 **Syntax:**
 `fix_dynamic_properties.php <verbose> <solve> <directory> <only_this>`
