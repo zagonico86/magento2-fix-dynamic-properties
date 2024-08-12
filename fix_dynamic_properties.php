@@ -36,13 +36,13 @@ if ($argc > 2) {
 }
 
 $directory = '.';
-if ($argc > 3) {
-    $directory = $argv[3]!='0';
+if ($argc > 3 && $argv[3] != '0') {
+    $directory = $argv[3];
 }
 
 $only_this = '';
-if ($argc > 4) {
-    $only_this = $argv[4]!='0';
+if ($argc > 4 && $argv[4] != '0') {
+    $only_this = $argv[4];
 }
 ////////////////
 
