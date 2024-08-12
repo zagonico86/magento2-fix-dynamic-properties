@@ -72,6 +72,14 @@ function getConstructorVariables($constructor) {
     $matches = [];
 
     if (preg_match_all($pattern, $constructor, $matches)) {
+        $matches[1] = array_filter($matches[1], function($var) use ($constructor) {
+            // Remove variables that are used as methods
+            if (strpos($constructor, '->'.$var.'(') !== false) {
+                return false;
+            }
+            return true;
+        });
+
         return array_unique($matches[1]);
     }
 
