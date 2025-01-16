@@ -37,7 +37,7 @@ if ($argc > 2) {
 
 $directory = '.';
 if ($argc > 3) {
-    $directory = $argv[3]!='0';
+    $directory = $argv[3];
 }
 
 $only_this = '';
